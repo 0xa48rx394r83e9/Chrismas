@@ -1,0 +1,28 @@
+{
+  "name": "rhythm",
+  "version": "1.0.0",
+  "description": "generate and play rhythm game from mp3 file",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/server.js",
+    "zip": "git archive -v -o app.zip --format=zip HEAD",
+    "uglify": "node ./uglify.js",
+    "create-chart": "node ./server/test/audio-util-test.js"
+  },
+  "license": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fft.js": "^4.0.4",
+    "node-lame": "^1.3.2",
+    "uuid": "^8.3.2",
+    "wav-decoder": "^1.3.0",
+    "ws": "^8.0.0",
+    "xlsx-populate": "^1.21.0"
+  },
+  "devDependencies": {
+    "nodeplotlib": "^0.7.5",
+    "uglify-js": "^3.14.1"
+  }
+}

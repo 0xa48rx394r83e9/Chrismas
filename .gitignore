@@ -1,0 +1,3 @@
+node_modules
+server/charts/*.json
+server/songs/*.mp3
